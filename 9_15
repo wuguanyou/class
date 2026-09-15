@@ -1,0 +1,31 @@
+print("hello world")
+B = 123
+A = 456.12
+C = A + B
+
+for i in range(B):
+    if C > 0:
+        A+=1
+        C+= B+i+A
+print(A,B,C,sep="@",end = "!!!!!!")
+
+
+print("這糖果{1:>10}克重{0:>20}".format(A,B))
+print(f"這糖果{A:>10}克重{B:>20}")
+
+
+
+def abc():
+
+    age=input("請輸入你的年齡")
+    if float(age) < 0:
+        print("傻逼")
+    else:
+        print("活人")
+    
+            
+abc()
+
+a, b=(input().split())
+print(b)
+print("your age is %f"%int(A+B+C))
