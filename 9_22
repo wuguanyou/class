@@ -1,0 +1,77 @@
+#include <stdio.h>
+
+int main() {
+    int year;
+
+    printf("input year: ");
+    scanf_s("%d", &year);
+
+    if (year % 4 == 0) {
+        if (year % 100 == 0) {
+            if (year % 400 == 0) {
+                printf("leap year");
+            }
+            else {
+                printf("not leap year");
+            }
+        }
+        else {
+            printf("leap year");
+        }
+    }
+    else {
+        printf("not leap year");
+    }
+
+    return 0;
+}
+
+////////////////////////////////////////////////
+練習一
+///////////////////////////////////////////////
+#include <stdio.h>
+int main() {
+	int month, day,allDays,what;
+	printf("input month: ");
+	scanf_s("%d", &month);
+	printf("input day: ");
+	scanf_s("%d", &day);
+	if (month == 1) {
+		allDays = day;
+	}
+	else if (month == 2) {
+		allDays = 31 + day;
+	}
+	else if (month == 3) {
+		allDays = 59 + day;
+	}
+	else if (month == 4) {
+		allDays = 90 + day;
+	}
+	else if (month == 5) {
+		allDays = 120 + day;
+	}
+	else if (month == 6) {
+		allDays = 151 + day;
+	}
+	else if (month == 7) {
+		allDays = 181 + day;
+	}
+	else if (month == 8) {
+		allDays = 212 + day;
+	}
+	else if (month == 9) {
+		allDays = 243 + day;
+	}
+	else if (month == 10) {
+		allDays = 273 + day;
+	}
+	else if (month == 11) {
+		allDays = 304 + day;
+	}
+	else if (month == 12) {
+		allDays = 334 + day;
+	}
+	what=
+  /////////////////////////////////////
+  練習二
