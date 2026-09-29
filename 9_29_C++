@@ -1,0 +1,121 @@
+#include <stdio.h>
+
+int main()
+{
+    printf("\n");
+    printf("A");
+    printf("\n");
+    int i, j;
+    for (i = 0; i <= 10; i++) {
+        for (j = 0;j < i;j++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+    
+    printf("\n");
+    printf("B");
+    printf("\n");
+    int p, o;
+    for (p = 10; p >=1 ; p--) {
+        for (o = 0;o < p;o++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+    printf("\n");
+    printf("C");
+    printf("\n");
+    int k, l;
+    for (k = 1; k <= 10; k++) {
+        for (l = 1;l < k;l++) {
+            printf(" ");
+        }
+        for (l = k; l <= 10; l++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+
+    printf("\n");
+    printf("D");
+    printf("\n");
+
+    int h, g;
+    for (h = 10; h >= 1; h--) {
+        for (g =1;g < h;g++) {
+            printf(" ");
+        }
+        for (g = h;g <=10;g++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+
+    printf("\n");
+    printf("2");
+    printf("\n");
+    int ii, jj;
+
+    
+    for (ii = 1; ii <= 5; ii++)
+    {
+        for (jj = 1; jj <= 5 - ii; jj++)
+        {
+            printf(" ");
+        }
+
+        for (jj = 1; jj <= 2 * ii - 1; jj++)
+        {
+            printf("*");
+        }
+
+        printf("\n");
+    }
+
+    
+    for (ii = 4; ii >= 1; ii--)
+    {
+        for (jj = 1; jj <= 5 - ii; jj++)
+        {
+            printf(" ");
+        }
+
+        for (jj = 1; jj <= 2 * ii - 1; jj++)
+        {
+            printf("*");
+        }
+
+        printf("\n");
+    }
+    
+    int sm, oo, ooo;
+    double total;
+
+    total = 4.0;
+    ooo = 3;
+
+    printf("input the Number of terms: ");
+    scanf_s("%d", &sm);
+
+    for (oo = 1; oo < sm; oo++)
+    {
+        if (oo % 2 == 1)
+        {
+            total -= 4.0 / ooo;
+        }
+        else
+        {
+            total += 4.0 / ooo;
+        }
+
+        ooo += 2;
+    }
+
+    printf("%f\n", total);
+
+    
+    return 0;
+}
+
+    
