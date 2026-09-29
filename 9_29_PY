@@ -1,0 +1,64 @@
+'''
+i=1
+sum=0
+a=1
+while (a<106):
+    a=a+i
+    sum+=a
+    print("第%d次，a值為%d，總和%d" %(i,a,sum))
+    i+=1
+
+'''    
+
+'''
+n=int(input("輸入n"))
+sum=0
+for x in range(n):
+    print("%d round" %(x+1))
+    sum=sum+x
+    print(sum)
+    while x<101:
+        print("jfsdjfikzsjf")
+        x+=1
+
+'''
+'''
+a=int(0)
+aa=int(input("輸入你的帳戶餘額吧，告訴我你有多少錢"))
+while aa !=0:
+    print("好酷喔，你有%d元ㄟ"%(aa))
+    while aa%1011!=0:
+        aa+=1
+    print("你的餘額離1011的倍數:%d最近ㄟ，有夠好笑"%(aa))
+    while a<=3:
+        for n in range(aa,aa*1000):
+            if (n%79==0):
+                a+=1
+                if a ==3:
+                    print("wow ，神秘數字%d"%(n))
+    aa=int(input("別騙我了你到底有多少錢"))
+print("有夠可悲")
+'''
+'''
+for i in range(1,10):
+    for j in range(1,10):
+        print("%d*%d"%(i,j),end=" @口@ ") 
+    print("\n")
+'''
+line=int(input("輸入你要的星星列數"))
+for i in range(1, line+1):
+    for j in range(line-i):
+        print(" ",end="")
+    for j in range(1,2*i - 1):
+        print("*",end="")
+    print()
+
+first=int(input("輸入你想要的起始數字"))
+last=int(input("輸入你想要的結尾數字"))
+for i in range(first,last+1):
+    a=True
+    for j in range(2,last):
+        if not(i%j):
+            a=flase
+    if a:
+        print("%d是植數"%j)
