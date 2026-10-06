@@ -1,0 +1,59 @@
+'''
+str = 'Happy New Year'
+print(str.find('New'))
+print(str.find('month'))
+str = 'Good Morning'
+print(str.replace('Morning', 'night'))
+str = 'apple, app, airplane'
+print(str.count('app'))
+str = 'Happy New Year'
+print(str.split())
+str = 'red,green,blue'
+print(str.split(','))
+str = 'red,green,blue'
+print(str.split())
+'''
+'''
+a=0
+b=int(0)
+score=[]
+total=0
+average=0
+while a!=-1:
+    b+=1
+    a=int(input("輸入第%d筆成績，輸入-1停止輸入: "%b))
+    if a!=-1:
+        score.append(a)
+        
+for i in range(0,len(score)):
+    total+=score[i]
+average=total/(b-1)
+print("總分：%d"%total)
+print("平均：%.1f"%average)
+'''
+'''
+dictA={"A":1,"B":2,"C":3}
+dictA["R"]=1029439
+del dictA["A"]
+print(dictA)
+'''
+
+'''
+dictA={}
+dictIO=0
+while dictIO !=-1:
+    dictIO=int(input("輸入你要的操作: 1查詢，2新增，3刪除，若要結束請輸入-1，請輸入__"))
+    if dictIO==1:
+        key=input("輸入要找的商品: ")
+        print(dictA.get(key,"查無此商品"))
+    elif dictIO==2:
+        key=input("輸入你要新增的商品: ")
+        value=input("輸入商品的價格: ")
+        dictA[key]=value
+        print("新增厚的商品表",dictA)
+    elif dictIO==3:
+        key=input("輸入你要刪除的商品: ")
+        del dictA[key]
+'''
+
+
