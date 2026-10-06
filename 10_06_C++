@@ -1,0 +1,108 @@
+#include <stdio.h>
+
+#define M 3
+#define K 2
+#define N 1
+
+int main()
+{
+    int matrixA[M][K];
+    int matrixB[K][N];
+    int matrixC[M][N] = {0};
+    int matrixD[K][M] = {0};
+
+    // 輸入 A
+    printf("A is a %dx%d matrix\n", M, K);
+
+    for (int i = 0; i < M; i++)
+    {
+        for (int j = 0; j < K; j++)
+        {
+            printf("input matrixA[%d][%d]: ", i, j);
+            scanf_s("%d", &matrixA[i][j]);
+        }
+    }
+
+    // 輸入 B
+    printf("B is a %dx%d matrix\n", K, N);
+
+    for (int i = 0; i < K; i++)
+    {
+        for (int j = 0; j < N; j++)
+        {
+            printf("input matrixB[%d][%d]: ", i, j);
+            scanf_s("%d", &matrixB[i][j]);
+        }
+    }
+
+    // C = A × B
+    for (int i = 0; i < M; i++)
+    {
+        for (int j = 0; j < N; j++)
+        {
+            for (int k = 0; k < K; k++)
+            {
+                matrixC[i][j] += matrixA[i][k] * matrixB[k][j];
+            }
+        }
+    }
+
+    // D = A 的轉置
+    for (int i = 0; i < M; i++)
+    {
+        for (int j = 0; j < K; j++)
+        {
+            matrixD[j][i] = matrixA[i][j];
+        }
+    }
+
+    // 印 A
+    printf("\nMatrix A:\n");
+
+    for (int i = 0; i < M; i++)
+    {
+        for (int j = 0; j < K; j++)
+        {
+            printf("%d ", matrixA[i][j]);
+        }
+        printf("\n");
+    }
+
+    // 印 B
+    printf("\nMatrix B:\n");
+
+    for (int i = 0; i < K; i++)
+    {
+        for (int j = 0; j < N; j++)
+        {
+            printf("%d ", matrixB[i][j]);
+        }
+        printf("\n");
+    }
+
+    // 印 C
+    printf("\nMatrix C = A * B:\n");
+
+    for (int i = 0; i < M; i++)
+    {
+        for (int j = 0; j < N; j++)
+        {
+            printf("%d ", matrixC[i][j]);
+        }
+        printf("\n");
+    }
+
+    // 印 D
+    printf("\nMatrix D = transpose of A:\n");
+
+    for (int i = 0; i < K; i++)
+    {
+        for (int j = 0; j < M; j++)
+        {
+            printf("%d ", matrixD[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
